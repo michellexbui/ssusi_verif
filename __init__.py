@@ -32,14 +32,14 @@ class PrecipFile(SpaceData):
 
         # self['ave'].sum()
 
-    def add_hemi_plot(self, target=None, loc=111):
+    def add_hemi_plot(self, coord='mag', target=None, loc=111):
         '''
         Add a hemispheric plot figure.
 
         Parameters
         ==========
-        obj : :class:`~spacepy.pybats.PbData` object
-           The object on which to act.
+        coord : str, defaults to 'mag'
+           Set coordinate system to use, either 'mag' or 'geo'.
 
         Other Parameters
         ================
